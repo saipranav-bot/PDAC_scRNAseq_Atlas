@@ -1,0 +1,117 @@
+#############################################
+# Raw Data
+#############################################
+
+data/raw/
+*.tar
+*.tar.gz
+*.gz
+*.zip
+
+#############################################
+# Processed Data
+#############################################
+
+*.h5ad
+*.h5
+*.h5Seurat
+*.rds
+*.mtx
+
+#############################################
+# Large Results
+#############################################
+
+results/counts.txt
+results/meta.txt
+
+#############################################
+# Temporary Files
+#############################################
+
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+#############################################
+# Python
+#############################################
+
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+
+#############################################
+# Conda
+#############################################
+
+.conda/
+conda-meta/
+
+#############################################
+# R
+#############################################
+
+.Rhistory
+.RData
+.Rproj.user/
+
+#############################################
+# Jupyter
+#############################################
+
+.ipynb_checkpoints/
+
+#############################################
+# VS Code
+#############################################
+
+.vscode/
+
+#############################################
+# Operating System
+#############################################
+
+.DS_Store
+Thumbs.db
+
+#############################################
+# Large archives
+#############################################
+
+*.7z
+*.rar
+
+#############################################
+# Ignore generated processed matrices
+#############################################
+
+data/processed/*.h5ad
+data/processed/*.h5
+data/processed/*.rds
+data/processed/*.h5Seurat
+data/processed/*.mtx
+data/processed/barcodes.tsv
+data/processed/features.tsv
+data/processed/metadata.csv
+data/processed/pca.csv
+data/processed/umap.csv
+
+#############################################
+# Keep these folders tracked
+#############################################
+
+!scripts/
+!results/Figures/
+!results/Final_Figures/
+!results/Markers/
+!results/Tables/
+!results/DEG/
+!results/Pathways/
+!figures/
+!README.md

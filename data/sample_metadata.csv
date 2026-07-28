@@ -1,0 +1,11 @@
+sample,condition,path
+PDAC_TISSUE_3,Tumor,data/raw/PDAC_TISSUE_3/filtered_feature_bc_matrix
+PDAC_TISSUE_5,Tumor,data/raw/PDAC_TISSUE_5/filtered_feature_bc_matrix
+PDAC_TISSUE_10,Tumor,data/raw/PDAC_TISSUE_10/filtered_feature_bc_matrix
+PDAC_TISSUE_11A,Tumor,data/raw/PDAC_TISSUE_11A/filtered_feature_bc_matrix
+PDAC_TISSUE_12,Tumor,data/raw/PDAC_TISSUE_12/filtered_feature_bc_matrix
+PDAC_TISSUE_15,Tumor,data/raw/PDAC_TISSUE_15/filtered_feature_bc_matrix
+PDAC_TISSUE_16,Tumor,data/raw/PDAC_TISSUE_16/filtered_feature_bc_matrix
+AdjNorm_TISSUE_1,Normal,data/raw/AdjNorm_TISSUE_1/filtered_feature_bc_matrix
+AdjNorm_TISSUE_2,Normal,data/raw/AdjNorm_TISSUE_2/filtered_feature_bc_matrix
+AdjNorm_TISSUE_3,Normal,data/raw/AdjNorm_TISSUE_3/filtered_feature_bc_matrix

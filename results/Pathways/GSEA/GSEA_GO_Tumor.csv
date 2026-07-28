@@ -1,0 +1,2 @@
+"ID","Description","setSize","enrichmentScore","NES","pvalue","p.adjust","qvalue","rank","leading_edge","core_enrichment"
+"GO:0007586","digestion",12,-0.904944848763029,-2.82622089880309,1e-10,1.213e-07,1.213e-07,27,"tags=75%, list=4%, signal=73%","6690/440387/5644/1504/5646/1208/5406/279/1056"
