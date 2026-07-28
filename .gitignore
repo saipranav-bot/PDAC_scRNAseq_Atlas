@@ -115,3 +115,12 @@ data/processed/umap.csv
 !results/Pathways/
 !figures/
 !README.md
+
+#############################################
+# Archive folders
+#############################################
+
+archive_old/
+results/archive_old/
+scripts/archive_old/
+
