@@ -45,5 +45,14 @@ PDAC_scRNAseq_Atlas/
 └── README.md
 ```
 
-Raw and processed matrices are not committed; download the source data from GEO
-before running the pipeline.
+Raw and processed matrices are not committed; fetch the source data from GEO
+before running the pipeline:
+
+```bash
+bash scripts/00_download_data.sh
+```
+
+This downloads the ten GSE155698 samples used here (7 tumour + 3 adjacent-normal)
+into `data/raw/<sample>/filtered_feature_bc_matrix/`. Note that `PDAC_TISSUE_16`
+is deposited by GEO in the older Cell Ranger `filtered_gene_bc_matrices` layout;
+`01_load_and_merge_samples.R` handles both formats automatically.

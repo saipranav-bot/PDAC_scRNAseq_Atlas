@@ -60,9 +60,11 @@ print(head(markers))
 # Save complete marker table
 ############################################################
 
+dir.create("results/Tables", showWarnings = FALSE, recursive = TRUE)
+
 write.csv(
   markers,
-  "results/Cluster_Markers.csv",
+  "results/Tables/Cluster_Markers.csv",
   row.names = FALSE
 )
 
@@ -84,7 +86,7 @@ top10 <- markers %>%
 
 write.csv(
   top10,
-  "results/Top10_Markers_Per_Cluster.csv",
+  "results/Tables/Top10_Markers_Per_Cluster.csv",
   row.names = FALSE
 )
 
@@ -106,6 +108,6 @@ saveRDS(
 cat("\n=====================================\n")
 cat("Marker analysis completed successfully\n")
 cat("Files created:\n")
-cat("results/Cluster_Markers.csv\n")
-cat("results/Top10_Markers_Per_Cluster.csv\n")
+cat("results/Tables/Cluster_Markers.csv\n")
+cat("results/Tables/Top10_Markers_Per_Cluster.csv\n")
 cat("=====================================\n")

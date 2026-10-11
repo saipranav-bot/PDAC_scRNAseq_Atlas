@@ -80,29 +80,27 @@ for(i in 1:nrow(metadata)){
   ###########################
 
 
-  # New 10X format
-  # filtered_feature_bc_matrix
-
-  if(
-    dir.exists(sample_path)
-  ){
-
-    counts <- Read10X(
-      data.dir = sample_path
+  # Some GEO deposits store the older Cell Ranger v1/v2 layout
+  # (filtered_gene_bc_matrices) rather than filtered_feature_bc_matrix
+  # (e.g. PDAC_TISSUE_16 in GSE155698). Fall back to that directory
+  # when the expected one is absent.
+  if(!dir.exists(sample_path)){
+    alt_path <- sub(
+      "filtered_feature_bc_matrix$",
+      "filtered_gene_bc_matrices",
+      sample_path
     )
-
-
-  } else {
-
-
-    stop(
-      paste(
-        "Missing folder:",
-        sample_path
-      )
-    )
-
+    if(dir.exists(alt_path)){
+      message("Using legacy matrix folder for ", sample_name, ": ", alt_path)
+      sample_path <- alt_path
+    } else {
+      stop(paste("Missing folder:", sample_path))
+    }
   }
+
+  counts <- Read10X(
+    data.dir = sample_path
+  )
 
 
 
