@@ -17,7 +17,15 @@ library(ggplot2)
 # Set directory
 ##############################
 
-setwd("~/Cancer_scRNA_Project")
+# Locate the repository root so the script runs from any working directory.
+local({
+  a <- commandArgs(trailingOnly = FALSE)
+  f <- sub("^--file=", "", a[grep("^--file=", a)])
+  root <- if (length(f)) dirname(dirname(normalizePath(f)))
+          else if (file.exists("scripts")) normalizePath(".")
+          else normalizePath("..")
+  setwd(root)
+})
 
 
 ##############################
