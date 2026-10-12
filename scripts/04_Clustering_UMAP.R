@@ -15,6 +15,9 @@ local({
   setwd(root)
 })
 
+# Fixed seed so neighbour graph, clustering and UMAP are reproducible.
+set.seed(123)
+
 ##############################
 # Load PCA object
 ##############################

@@ -24,6 +24,9 @@ local({
   setwd(root)
 })
 
+# Fixed seed so PCA (randomised SVD) is reproducible across runs.
+set.seed(123)
+
 ##############################
 # Load QC-filtered object
 ##############################
