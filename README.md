@@ -56,3 +56,7 @@ This downloads the ten GSE155698 samples used here (7 tumour + 3 adjacent-normal
 into `data/raw/<sample>/filtered_feature_bc_matrix/`. Note that `PDAC_TISSUE_16`
 is deposited by GEO in the older Cell Ranger `filtered_gene_bc_matrices` layout;
 `01_load_and_merge_samples.R` handles both formats automatically.
+
+
+## Plain-English Explanation
+See [EXPLAIN_PLAIN_ENGLISH.md](EXPLAIN_PLAIN_ENGLISH.md) for a non-technical summary of what was done, steps, and verification.
